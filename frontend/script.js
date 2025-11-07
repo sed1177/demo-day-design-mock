@@ -18,7 +18,7 @@ function hasBadWords(text) {
 }
 
 // hidden key
-const HF_TOKEN = ''
+const HF_TOKEN = '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'
 
 
 // handling CORS through a proxy
