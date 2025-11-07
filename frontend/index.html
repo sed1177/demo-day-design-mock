@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Article Summarizer</title>
+    <title>ArticleOS - AI Article Summarizer!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
     <header>
-        <h1>AI Article Summarizer</h1>
+        <h1>ArticleOS - Your Personal AI Article Summarizer!</h1>
         <p class="subtitle">Paste an article or text to get a summary and sentiment analysis</p>
     </header>
 
@@ -18,7 +18,7 @@
 
         <form id="summarizeForm">
             <div class="form-group">
-                <label for="articleText">Paste your article or text</label>
+                <label for="articleText">Paste your article or text here!</label>
                 <textarea id="articleText" placeholder="Paste the full text of an article here..." required></textarea>
             </div>
 
@@ -27,20 +27,21 @@
                 <button type="reset" class="btn-secondary">Clear</button>
             </div>
         </form>
-
-        <div class="loading" id="loading">
+    <div class="loading" id="loading">
             <div class="spinner"></div>
             <p>Analyzing article...</p>
         </div>
 
-        <div class="results" id="results">
+        <!-- results box -->
+    <div class="results" id="results">
             <h2 style="margin-bottom: 16px; font-size: 18px; color: #333;">Summary</h2>
             <div class="summary-box" id="summaryText"></div>
+
 
             <h2 style="margin-bottom: 16px; font-size: 18px; color: #333; margin-top: 28px;">Sentiment Analysis</h2>
             <div class="sentiment-section" id="sentimentSection"></div>
 
-            <button type="button" class="btn-secondary" style="width: 100%;" onclick="document.getElementById('summarizeForm').reset(); document.getElementById('results').style.display = 'none';">Analyze Another Article</button>
+            <button type="button" class="btn-secondary" id="analyzeAnother">Analyze Another Article</button>
         </div>
     </div>
 </div>
